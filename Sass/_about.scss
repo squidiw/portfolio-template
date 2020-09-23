@@ -1,0 +1,355 @@
+.flex-container{
+  display: flex;
+  background-color: gold;
+
+  & > div{
+    width: 100%;
+  }
+
+  .left{
+    img{
+      width: 100%;
+    }
+  }
+  
+
+  .right{
+    border-radius: 10px 0 0 10px ;
+    background-color: #f1faee;
+    border-bottom: 4px solid #1d3557;
+
+    .title-text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+
+      h1 {
+        font-family: "Alice";
+        color: #a8dadc;
+        font-size: 3.5vw;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-family: "Sacremento";
+        color: #457b9d;
+        font-size: 3.2vw;
+        margin-top: -5px;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+      }
+    }
+
+    .second-text{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 160px;
+      margin-bottom: 10px;
+      
+          h3 {
+              color: #a8dadc;
+              font-family: "Alice";
+              text-transform: uppercase;
+              font-size: 3.5vw;
+          }
+
+          p {
+              color: #457b9d;
+              font-weight: bold;
+              padding-right: 16px;
+              text-align: right;
+              font-family: "Alice";
+              font-size: 1.7vw;
+              text-transform: capitalize;
+            }
+      
+    }
+
+    .skills{
+        // max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        .box{
+            flex: 0 1;
+            padding: 0 5px 0 5px;
+            margin-top: 70px;
+            margin-bottom: 20px;
+
+            img{
+                width: 55px;
+                height: auto;
+            }
+        }
+
+    }
+  }
+}
+
+
+
+
+
+.bio-wrapper {
+    height: 100vh;
+    width: 100%;
+    
+  
+    .bio-inner {
+      display: flex;
+      min-height: 100vh;
+      background-color: #1d3557;
+      
+  
+      // .left-part {
+      //   flex: 0 1 590px;
+      //   max-width: 590px;
+      //   background-image: url(../Imgs/bit-img-intro-1.png);
+      //   background-repeat: no-repeat;
+      //   background-attachment: fixed;
+
+        
+  
+      //   img {
+      //     max-width: auto;
+      //     height: auto;
+      //   }
+      // }
+
+      .left-part{
+        flex:  1 1 400px;
+        max-width: 600px;
+        background-image: url(../Imgs/bit-img-intro-1.png);
+        background-repeat: no-repeat;
+        object-fit: scale-down;
+        background-position-x: -2vw;
+
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+      }
+  
+      .right-part {
+        flex: 1 1 500px;
+        border-radius: 10px 0 0 10px ;
+        background-color: #f1faee;
+        border-bottom: 4px solid #1d3557;
+  
+        .title-text {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          padding-top: 10px;
+  
+          h1 {
+            font-family: "Alice";
+            color: #a8dadc;
+            font-size: 3.5vw;
+            text-transform: uppercase;
+          }
+  
+          h2 {
+            font-family: "Sacremento";
+            color: #457b9d;
+            font-size: 3.2vw;
+            margin-top: -5px;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+          }
+        }
+  
+        .second-text{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin-top: 160px;
+          margin-bottom: 10px;
+          
+              h3 {
+                  color: #a8dadc;
+                  font-family: "Alice";
+                  text-transform: uppercase;
+                  font-size: 3.5vw;
+              }
+  
+              p {
+                  color: #457b9d;
+                  font-weight: bold;
+                  padding-right: 16px;
+                  text-align: right;
+                  font-family: "Alice";
+                  font-size: 1.7vw;
+                  text-transform: capitalize;
+                }
+          
+        }
+  
+        .skills{
+            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+  
+            .box{
+                flex: 0 1;
+                padding: 0 5px 0 5px;
+                margin-top: 70px;
+                margin-bottom: 20px;
+                max-width: auto;
+  
+                img{
+                    width: 55px;
+                    height: auto;
+                }
+            }
+
+        }
+  
+        
+      }
+    }
+  }
+
+  // @media (max-width: 600px) {
+  //   .bio-wrapper{
+
+  //     .bio-inner{
+  //       background-color: #f1faee;
+
+  //       .left-part{
+  //         display: none;
+  //       }
+
+  //       .right-part{
+
+          
+  //         .title-text{
+  //           h1{
+  //             font-size: 2.5em;
+  //           }
+
+  //           h2{
+  //             font-size: 2.2em;
+  //             margin-top: -12px;
+  //           }
+  //         }
+
+  //         .second-text{
+      
+  //           p{
+  //             font-size: 1.2rem;
+  //             text-align: center;
+  //             padding-left: 5px;
+  //           }
+  //         }
+
+  //         .skills{
+  //           display: grid;
+  //           grid-template-columns: repeat(4,30px);
+  //           padding-top: 2px;
+  //           padding-bottom: 5px;
+
+  //           .box{
+  //             margin-top: 20px;
+  //             max-width: auto;
+              
+  //             img{
+  //               width: 55px;
+  //             }
+  //           }
+  //         }
+  //       }
+
+  //     }
+  //   }
+  // }
+  
+  @media (max-width: 960px) and (min-width: 600px) {
+    .bio-wrapper{
+
+      .bio-inner{
+
+        
+        // .left-part{
+        //   flex: 0 1 50%;
+        //   width: 100%;
+
+        //   img{
+        //     display: grid;
+        //     height: 600px;
+        //    max-width: 100%;
+        //   }
+        // }
+
+        .left-part{
+          width: 50%;
+
+          #image {
+            display: inline-block;
+            width: 100%;
+            font-size: 0;
+            line-height: 0;
+            vertical-align: middle;
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-image: url(../Imgs/bit-img-intro-1.png); 
+        }
+        
+        }
+
+        .right-part{
+
+          flex: 1 1 50%;
+          .title-text{
+            h1{
+              font-size: 4vw;
+            }
+
+            h2{
+              font-size: 3vw;
+              margin-top: -12px;
+            }
+          }
+
+          .second-text{
+      
+            p{
+              font-size: 2vw;
+              text-align: right;
+              padding-left: 2px;
+            }
+          }
+
+          .skills{
+            display: grid;
+            grid-template-columns: repeat(4,30px);
+            padding-top: 2px;
+            padding-bottom: 5px;
+
+            .box{
+              margin-top: 20px;
+              max-width: auto;
+              
+              img{
+                width: 55px;
+              }
+            }
+          }
+
+        }
+
+        
+      }
+    }
+  }
+  
